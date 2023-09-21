@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { userRepository } from "repositories/user.repository";
+import { userRepository } from "../repositories/user.repository";
 import { CreateUserData, User } from "protocols";
 import httpStatus from "http-status";
 

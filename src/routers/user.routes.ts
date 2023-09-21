@@ -7,6 +7,7 @@ import userController from "../controllers/user.controller";
 const userRouter = Router();
 
 userRouter.get("/users", userController.getUsers);
+userRouter.get("/users/:id", userController.getUser);
 userRouter.post("/users", validateSchema(UserSchema), userController.createUser);
 userRouter.put("/users/:id", validateSchema(UserSchema), userController.updateUser)
 userRouter.delete("/users/:id", userController.deleteUser)
